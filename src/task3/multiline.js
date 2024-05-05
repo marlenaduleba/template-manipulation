@@ -3,8 +3,9 @@ function multiline(templateString) {
   let i = 1;
   const strings = templateString[0].split("\n");
   strings.forEach((str) => {
-    if (str) {
-      text += `${i} ${str} \n`;
+    const trimmedString = str.replace(/^\s{4}/, '');
+    if (trimmedString) {
+      text += `${i} ${trimmedString}\n`;
       i++;
     }
   });
@@ -22,3 +23,5 @@ console.log(code);
 // "1 function add(a, b) {
 //  2 return a + b;
 //  3 }"
+
+module.exports = multiline;
