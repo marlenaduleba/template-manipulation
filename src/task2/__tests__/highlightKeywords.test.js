@@ -2,7 +2,7 @@ const {
   highlightKeywords,
   keywords,
   template,
-} = require("../highlightKeywords"); // Zakładając, że funkcja znajduje się w pliku highlightKeywords.js
+} = require("../highlightKeywords");
 
 describe("highlightKeywords function", () => {
   test("correctly highlights keywords in the template string", () => {
