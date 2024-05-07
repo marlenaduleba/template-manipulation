@@ -15,7 +15,7 @@ function curry(func, arity = func.length) {
       args = args.concat(nextArgs.slice(nextIndex));
 
       if (args.length >= arity && !args.includes(placeholder)) {
-        return func(...args); 
+        return func(...args);
       } else {
         return nextCurried(args);
       }

@@ -3,7 +3,7 @@ function multiline(templateString) {
   let i = 1;
   const strings = templateString[0].split("\n");
   strings.forEach((str) => {
-    const trimmedString = str.replace(/^\s{4}/, '');
+    const trimmedString = str.replace(/^\s{4}/, "");
     if (trimmedString) {
       text += `${i} ${trimmedString}\n`;
       i++;
